@@ -146,6 +146,7 @@ def scrape_merck_selenium():
 
     # Now get the final rendered HTML
     page_html = driver.page_source
+    
     driver.quit()
 
     soup = BeautifulSoup(page_html, "html.parser")
